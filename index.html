@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biblioteca</h1>
+
+        <input type="text" id="titulo" placeholder="Título do livro">
+        <input type="text" id="autor" placeholder="Autor do livro">
+
+        <button onclick="controller.adicionar()">Adicionar Livro</button>
+
+        <ul id="lista"></ul>
+    </div>
+
+    <script type="module" src="../controller/livroController.js"></script>
+    <script type="module" src="../repositories/livroRepository.js"></script>
+    <script type="module" src="../services/livroService.js"></script>
+</body>
+</html>
